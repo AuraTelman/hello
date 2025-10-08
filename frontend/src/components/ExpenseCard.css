@@ -1,0 +1,128 @@
+.expense-card {
+  background: var(--card-white);
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.15s ease;
+}
+
+.expense-card:last-child {
+  margin-bottom: 0;
+}
+
+.expense-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.expense-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.expense-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.expense-merchant {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.expense-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.merchant-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  word-break: break-word;
+}
+
+.delete-button {
+  font-size: 20px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.delete-button:hover {
+  opacity: 1;
+  background-color: #FEE2E2;
+  transform: scale(1.1);
+}
+
+.expense-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 36px;
+}
+
+.expense-amount {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.expense-date {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.expense-category {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-blue);
+  background-color: #EFF6FF;
+  padding: 4px 12px;
+  border-radius: 12px;
+  width: fit-content;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .expense-card {
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .expense-icon {
+    font-size: 20px;
+  }
+  
+  .merchant-name {
+    font-size: 16px;
+  }
+  
+  .delete-button {
+    font-size: 18px;
+  }
+  
+  .expense-details {
+    padding-left: 32px;
+  }
+  
+  .expense-amount {
+    font-size: 18px;
+  }
+  
+  .expense-date {
+    font-size: 13px;
+  }
+}
+
+
